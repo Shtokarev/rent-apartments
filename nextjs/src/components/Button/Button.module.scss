@@ -1,0 +1,38 @@
+@import '@styles/variables';
+
+.button {
+  display: inline-flex;
+  position: relative;
+  appearance: none;
+  min-width: 64px;
+  color: $textColor;
+  background-color: $buttonBG;
+  margin: 0;
+  padding: 6px 16px;
+  border: 0;
+  border-radius: $buttonBorderRadius;
+  cursor: pointer;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-decoration: none;
+  outline: 0;
+}
+
+.glowButton {
+  animation: glow 2s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 $buttonBG;
+  }
+  100% {
+    box-shadow: 0 0 10px 8px transparent;
+  }
+}
+
+.button:hover {
+  background-color: $buttonHoverBG;
+}
