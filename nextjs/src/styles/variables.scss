@@ -1,0 +1,44 @@
+// colors
+$textColor: #000;
+$backgroundGray: rgba(#aaaaaa, 0.1);
+
+$paletteBlue: #4285f4;
+$paletteRed: #de3e35;
+$paletteYellow: #f7c223;
+$paletteGreen: #1b9a59;
+
+$paletteCycleColor1: #72d6ff;
+$paletteCycleColor2: #7972ff;
+$paletteCycleColor3: #be72ff;
+
+// button
+$buttonBG: #fdc600;
+$buttonHoverBG: #e9b600;
+$buttonBorderRadius: 4px;
+
+// header
+$headerBackgroundColor: #000;
+$headerTextColor: #ffffff;
+$headerDesktopMinHeight: 88px;
+
+$headerHeight: 88px;
+
+// animation
+$animationDuration: 1.4s;
+$menuDuration: 0.3s;
+
+// fonts
+$desktopMenuFontSize: 16px;
+// $primaryFont: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
+$primaryFont: 'Montserrat';
+$normalSize: 14px;
+
+$duration: 0.35s;
+
+@mixin faster {
+  transition-duration: $duration/2;
+}
+
+@mixin fastest {
+  transition-duration: $duration/4;
+}
