@@ -1,0 +1,58 @@
+@import '@styles/variables';
+
+$doorColorLight: #ffc223;
+$doorColorDark: #b6a83d;
+
+.logo {
+  animation: logoGlow ($animationDuration * 4) ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0% {
+    filter: drop-shadow(0 0 0 $doorColorLight);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px $doorColorLight);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 $doorColorLight);
+  }
+}
+
+.logoContent {
+  animation: fillColors ($animationDuration * 4) ease-in-out infinite;
+}
+
+@keyframes fillColors {
+  0% {
+    fill: $paletteCycleColor2;
+  }
+  33% {
+    fill: $paletteCycleColor3;
+  }
+  67% {
+    fill: $paletteCycleColor1;
+  }
+  100% {
+    fill: $paletteCycleColor2;
+  }
+}
+
+.door {
+  animation: fillDoorColors ($animationDuration * 4) ease-in-out infinite;
+}
+
+@keyframes fillDoorColors {
+  0% {
+    fill: $doorColorDark;
+    transform: scale(1);
+  }
+  50% {
+    fill: $doorColorLight;
+    transform: scale(1.04) translateX(-2%) translateY(-1.5%);
+  }
+  100% {
+    fill: $doorColorDark;
+    transform: scale(1);
+  }
+}
